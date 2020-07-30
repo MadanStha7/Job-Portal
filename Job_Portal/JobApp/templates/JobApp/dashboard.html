@@ -1,0 +1,134 @@
+{% extends 'JobApp/index.html' %}
+
+{% block content %}
+
+<main>
+
+    <div class="col-lg-12 text-center mt-5">
+    </div>
+    <div class="col-md-6  offset-md-3 mt-5 mb-5 pt-3">
+        <h2>Search Available Job</h2>
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Job Title" aria-label="Job Title">
+            <input type="text" class="form-control" placeholder="Location" aria-label="Location">
+            <div class="input-group-append">
+                <span class="input-group-text"><i class="fa fa-search"></i></span>
+            </div>
+        </div>
+        <button type="button" class="btn btn-outline-primary">Build Your Resume</button>
+        <button type="button" class="btn btn-outline-primary float-right">Advanced Search</button>
+
+
+    </div>
+    <div class="container mt-5 mb-5 pt-3">
+        <table class="table table-hover">
+            <h4>Recent Job Posts</h4>
+            <thead>
+            <tr>
+                <th scope="col">Job Title</th>
+                <th scope="col">Company Name</th>
+                <th scope="col">Skill Level</th>
+                <th scope="col">Location</th>
+                <th></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr class="table-active">
+                <th scope="row">Django Developer</th>
+                <td>ABC Tech Company</td>
+                <td>Beginner</td>
+                <td>New Baneshor</td>
+                <td>
+                    <button class="btn btn-info" type="submit">Details</button>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">React Developer</th>
+                <td>DEF Company</td>
+                <td>Mid-Level</td>
+                <td>Chabahil</td>
+                <td>
+                    <button class="btn btn-info" type="submit">Details</button>
+                </td>
+            </tr>
+            <tr class="table-active">
+                <th scope="row">Laravel Developer</th>
+                <td>GHI Tech</td>
+                <td>Expert</td>
+                <td>Thapathali</td>
+                <td>
+                    <button class="btn btn-info" type="submit">Details</button>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">JAVA Developer</th>
+                <td>Nep Infosys</td>
+                <td>Senior-Level</td>
+                <td>Satdobato</td>
+                <td>
+                    <button class="btn btn-info" type="submit">Details</button>
+                </td>
+            </tr>
+            <tr class="table-active">
+                <th scope="row">DotNet Developer</th>
+                <td>XYZ Technology</td>
+                <td>Intern</td>
+                <td>Sankhamul</td>
+                <td>
+                    <button class="btn btn-info" type="submit">Details</button>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">UX/UI Designer</th>
+                <td>New Tech</td>
+                <td>Mid-Level</td>
+                <td>LaganKhel</td>
+                <td>
+                    <button class="btn btn-info" type="submit">Details</button>
+                </td>
+            </tr>
+
+            </tbody>
+        </table>
+    </div>
+
+    <div class="container mt-5">
+        <h4 class="text-center">Top Hiring Companies</h4>
+        <div class="card-deck">
+            <div class="card">
+                <!-- image to be placed later-->
+                <div class="card-body">
+                    <h5 class="card-title">Company Name</h5>
+                    <h7 class="card-text">Company Address</h7>
+                    <p>Contact Details</p>
+                </div>
+                <div class="card-footer">
+                    <a href="" class="text-muted">Read More</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Company Name</h5>
+                    <h7 class="card-text">Company Address</h7>
+                    <p>Contact Details</p>
+                </div>
+                <div class="card-footer">
+                    <a href="" class="text-muted">Read More</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Company Name</h5>
+                    <h7 class="card-text">Company Address</h7>
+                    <p>Contact Details</p>
+                </div>
+                <div class="card-footer">
+                    <a href="" class="text-muted">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</main>
+
+{% endblock %}
