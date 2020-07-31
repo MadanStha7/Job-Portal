@@ -1,0 +1,86 @@
+{% extends 'JobApp/index.html' %}
+
+{% block content %}
+<main class="container">
+    <h3 class="mt-5 mb-4">REGISTRATION FORM FOR EMPLOYER </h3>
+    <hr>
+    <form>
+        <div class="form-group col-md-6">
+            <label for="fname">Organization Logo</label>
+
+            <div class="input-group mb-3">
+                <div class="custom-file">
+                    <input accept="image/*" type="file" class="custom-file-input" id="resume"
+                           aria-describedby="resume">
+                    <label class="custom-file-label" for="logo">Upload logo</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group col-md-6">
+            <label for="fname">Organization Name</label>
+            <input type="text" class="form-control" id="fname" placeholder="Organization Name">
+        </div>
+
+        <div class="form-group col-md-6">
+            <label for="organiztionType">Organization Type</label>
+            <select id="organizationtype" class="form-control" onmousedown="if(this.options.length>8){this.size=8;}"
+                    onchange='this.size=0;' onblur="this.size=0;">
+                <option selected>Choose the type of organization</option>
+                <option>Airlines</option>
+                <option>Automotive Sales, Support & Service</option>
+                <option>Banks</option>
+                <option>Call Center</option>
+                <option>Consumer Products</option>
+                <option>Designing / Printing</option>
+                <option>E-business</option>
+                <option>Education</option>
+                <option>Event Management</option>
+                <option>Finance</option>
+                <option>Governmental Organization</option>
+                <option>Health</option>
+                <option>Hotels</option>
+                <option>Insurence</option>
+                <option>Information Technology</option>
+                <option>Import/Export</option>
+                <option>ISP</option>
+                <option>Media</option>
+                <option>NGO</option>
+                <option>Real Estate</option>
+                <option>Travel Agency</option>
+            </select>
+        </div>
+
+        <div class="form-group col-md-6">
+            <label for="inputAddress">Organization Address</label>
+            <input type="text" class="form-control" id="inputAddress" placeholder="Organization Address">
+        </div>
+
+        <div class="form-group col-md-6">
+            <label>Contact Number</label>
+            <input type="phone" class="form-control" id="phone" placeholder="Contact Number">
+        </div>
+
+        <div class="form-group col-md-6">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="Email">
+        </div>
+
+        <div class="form-group col-md-6">
+            <label for="pwd">Password</label>
+            <input type="password" class="form-control" id="pwd" placeholder="Password">
+
+        </div>
+        <div class="form-group col-md-6">
+            <label for="pwd">Confirm Password</label>
+            <input type="password" class="form-control" id="pwd2" placeholder="Retype Password">
+        </div>
+
+        <div class="form-group col-md-6">
+            <h7>Already have accounnt?</h7>
+            <a href=""> Login</a><br>
+            <button type="submit" class="btn btn-primary">Register</button>
+        </div>
+    </form>
+</main>
+{% endblock %}

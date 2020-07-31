@@ -11,8 +11,11 @@ def loginPage(request):
     return render(request, "JobApp/login.html")
 
 
-def registerPage(request):
+def jobseeker_registerPage(request):
     return render(request, "JobApp/register.html")
+
+def company_registerPage(request):
+    return render(request, "JobApp/company_register.html")
 
 
 def companyPage(request):
