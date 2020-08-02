@@ -1,0 +1,125 @@
+{% extends 'JobApp/index.html' %}
+{% load static %}
+{% block content %}
+<div class="container ">
+
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+
+        <li class="nav-item">
+            <a class="nav-link active" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
+               aria-controls="profile" aria-selected="false">Profile</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab"
+               aria-controls="contact" aria-selected="false">Posted Jobs</a>
+        </li>
+    </ul>
+    <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+
+            <div class="row">
+                <div class="col-3">
+                    <img src="{% static '/images/download.png' %}" style="margin-top: 60px; margin-left: 20px;" class="img-thumbnail">
+                </div>
+                <div class="col-9" style="margin-top: 40px;">
+
+
+                    <table class="table " style="margin-top: 20px;">
+                        <thead>
+                        <tr>
+                            <th scope="col" class="bg-info">Company Name</th>
+
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>ABC Company</td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+                    <table class="table " style="margin-top: 20px;">
+                        <thead>
+                        <tr>
+                            <th scope="col" class="bg-info">Company Type</th>
+
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Information Technology</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <table class="table " style="margin-right: 20px;">
+                    <thead>
+                    <tr>
+                        <th scope="col" class="bg-info">Comapny Address</th>
+
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Kathmandu, nepal</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <table class="table " style="margin-right: 20px;">
+                    <thead>
+                    <tr>
+                        <th scope="col" class="bg-info">Contact</th>
+
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>+9779813609606</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <table class="table " style="margin-right: 20px;">
+                    <thead>
+                    <tr>
+                        <th scope="col" class="bg-info">Email</th>
+
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>abc@company.com</td>
+                    </tr>
+                    </tbody>
+                </table>
+
+                <table class="table " style="margin-right: 20px;">
+                    <thead>
+                    <tr>
+                        <th scope="col" class="bg-info">Company Description</th>
+
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td style="text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit. Quaerat sit, amet nostrum
+                            omnis reprehenderit repellat est totam ex odit sapiente similique voluptatum magni
+                            officiis laudantium excepturi harum corporis temporibus quidem? Lorem ipsum dolor
+                            sit amet, consectetur adipisicing elit. Dolorem culpa pariatur impedit autem odio
+                            ipsam recusandae ipsum amet. Quos quasi magnam illum a nobis praesentium fuga fugit
+                            adipisci ducimus architecto. Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Deleniti possimus, architecto molestias ipsum obcaecati reiciendis. Ratione
+                            dicta dolor neque quia officiis, ea facere fuga, deleniti esse architecto similique
+                            nihil ex.
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+            List of posted jobs
+        </div>
+    </div>
+</div>
+{% endblock %}

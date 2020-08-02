@@ -17,7 +17,17 @@
                 <a class="nav-link text-dark" href="{% url 'job' %}">Jobs</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link text-dark" href="{% url 'company' %}">Companies</a>
+                <a class="nav-link text-dark" href="{% url 'company' %}">Company</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle mr-0  text-dark" href="#" id="navbarDropdownProfileLink"
+                   role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Profile
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="{% url 'jobseeker_profile' %}">Job Seeker</a>
+                    <a class="dropdown-item" href="{% url 'company_profile' %}">Employer</a>
+                </div>
             </li>
             <li class="nav-item">
                 <a class="nav-link text-dark" href="{% url 'login' %}">LogIn</a>
@@ -30,9 +40,10 @@
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                     <a class="dropdown-item" href="{% url 'register' %}">Job Seeker</a>
-                    <a class="dropdown-item" href="{% url 'register' %}">Employer</a>
+                    <a class="dropdown-item" href="{% url 'company_register' %}">Employer</a>
                 </div>
             </li>
+
         </ul>
     </div>
 </nav>

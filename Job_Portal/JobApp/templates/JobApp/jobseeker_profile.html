@@ -1,0 +1,158 @@
+{% extends 'JobApp/index.html' %}
+{% load static %}
+{% block content %}
+
+ <div class="container">
+
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+
+            <li class="nav-item">
+                <a class="nav-link active" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
+                    aria-controls="profile" aria-selected="false">Profile</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab"
+                    aria-controls="contact" aria-selected="false">Applied Jobs</a>
+            </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+
+                <div class="row">
+                    <div class="col-3">
+                        <img src="{% static '/images/download.png' %}" style="margin-top: 60px; margin-left: 20px;" class="img-thumbnail">
+                    </div>
+                    <div class="col-9" style="margin-top: 40px;">
+
+
+                        <table class="table " style="margin-top: 20px;">
+                            <thead>
+                                <tr>
+                                    <th scope="col" class="bg-info">Name</th>
+
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Madan Shrestha</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <table class="table " style="margin-top: 20px;">
+                            <thead>
+                                <tr>
+                                    <th scope="col" class="bg-info">Date of Birth</th>
+
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>22/04/1997</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <table class="table " style="margin-right: 20px;">
+                        <thead>
+                            <tr>
+                                <th scope="col" class="bg-info">Gender</th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Male</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table " style="margin-right: 20px;">
+                        <thead>
+                            <tr>
+                                <th scope="col" class="bg-info">Address</th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Kathmandu</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table " style="margin-right: 20px;">
+                        <thead>
+                            <tr>
+                                <th scope="col" class="bg-info">Mobile Number</th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>+9779813609606 </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <table class="table "style="margin-right: 20px;">
+                        <thead>
+                            <tr>
+                                <th scope="col" class="bg-info">Email</th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>madanstha.124@gmail.com </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <table class="table " style="margin-right: 20px;">
+                        <thead>
+                            <tr>
+                                <th scope="col" class="bg-info">Professional Skills</th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Python, Django, HTML, CSS, JavaScript</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table " style="margin-right: 20px;">
+                        <thead>
+                            <tr>
+                                <th scope="col" class="bg-info">Experience</th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>2 years experience in Python(Django) </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table " style="margin-right: 20px;">
+                        <thead>
+                            <tr>
+                                <th scope="col" class="bg-info">Education</th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>BSc CSIT(TU)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                List of applied jobs
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

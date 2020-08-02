@@ -7,6 +7,22 @@ def homePage(request):
     return render(request, "JobApp/dashboard.html")
 
 
+def companyPage(request):
+    return render(request, "JobApp/company.html")
+
+
+def jobPage(request):
+    return render(request, "JobApp/jobs.html")
+
+
+def jobseeker_profile(request):
+    return render(request, "JobApp/jobseeker_profile.html")
+
+
+def company_profile(request):
+    return render(request, "JobApp/company_profile.html")
+
+
 def loginPage(request):
     return render(request, "JobApp/login.html")
 
@@ -14,13 +30,6 @@ def loginPage(request):
 def jobseeker_registerPage(request):
     return render(request, "JobApp/register.html")
 
+
 def company_registerPage(request):
     return render(request, "JobApp/company_register.html")
-
-
-def companyPage(request):
-    return render(request, "JobApp/company.html")
-
-
-def jobPage(request):
-    return render(request, "JobApp/jobs.html")
