@@ -2,31 +2,31 @@
 
 {% block content %}
 <main class="container">
-    <h3 class="mt-5 mb-4">REGISTRATION FORM FOR EMPLOYER </h3>
+    <h3 class="mt-5 mb-4">REGISTRATION FORM FOR COMPANY </h3>
     <hr>
     <form>
         <div class="form-group col-md-6">
-            <label for="fname">Organization Logo</label>
+            <label >Company Logo</label>
 
             <div class="input-group mb-3">
                 <div class="custom-file">
                     <input accept="image/*" type="file" class="custom-file-input" id="resume"
                            aria-describedby="resume">
-                    <label class="custom-file-label" for="logo">Upload logo</label>
+                    <label class="custom-file-label">Upload logo</label>
                 </div>
             </div>
         </div>
 
         <div class="form-group col-md-6">
-            <label for="fname">Organization Name</label>
-            <input type="text" class="form-control" id="fname" placeholder="Organization Name">
+            <label for="company_name">Company Name</label>
+            <input type="text" class="form-control" id="company_name" placeholder="Company Name">
         </div>
 
         <div class="form-group col-md-6">
-            <label for="organiztionType">Organization Type</label>
-            <select id="organizationtype" class="form-control" onmousedown="if(this.options.length>8){this.size=8;}"
+            <label for="companyType">Company Type</label>
+            <select id="Companytype" class="form-control" onmousedown="if(this.options.length>8){this.size=8;}"
                     onchange='this.size=0;' onblur="this.size=0;">
-                <option selected>Choose the type of organization</option>
+                <option selected>Choose the type of Company</option>
                 <option>Airlines</option>
                 <option>Automotive Sales, Support & Service</option>
                 <option>Banks</option>
@@ -37,10 +37,10 @@
                 <option>Education</option>
                 <option>Event Management</option>
                 <option>Finance</option>
-                <option>Governmental Organization</option>
+                <option>Governmental Company</option>
                 <option>Health</option>
                 <option>Hotels</option>
-                <option>Insurence</option>
+                <option>Insurance</option>
                 <option>Information Technology</option>
                 <option>Import/Export</option>
                 <option>ISP</option>
@@ -52,8 +52,8 @@
         </div>
 
         <div class="form-group col-md-6">
-            <label for="inputAddress">Organization Address</label>
-            <input type="text" class="form-control" id="inputAddress" placeholder="Organization Address">
+            <label for="inputAddress">Company Address</label>
+            <input type="text" class="form-control" id="inputAddress" placeholder="Company Address">
         </div>
 
         <div class="form-group col-md-6">
