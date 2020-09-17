@@ -1,22 +1,29 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from .models import *
 
 
 # Create your views here.
 def homePage(request):
-    return render(request, "JobApp/dashboard.html")
+    job = Job.objects.all()
+    company = Company.objects.all()
+    context = {'job': job, 'company': company}
+    return render(request, "JobApp/dashboard.html", context)
 
 
 def companyPage(request):
-    return render(request, "JobApp/company.html")
+    company = Company.objects.all()
+    return render(request, "JobApp/company.html", {'company': company})
 
 
 def jobPage(request):
-    return render(request, "JobApp/jobs.html")
+    job = Job.objects.all()
+    return render(request, "JobApp/jobs.html", {'job': job})
 
 
 def jobseeker_profile(request):
-    return render(request, "JobApp/jobseeker_profile.html")
+    job_seeker = JobSeeker.objects.all()
+    return render(request, "JobApp/jobseeker_profile.html", {'job_seeker': job_seeker})
 
 
 def company_profile(request):

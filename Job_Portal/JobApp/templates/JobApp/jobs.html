@@ -6,6 +6,53 @@
         Jobs Available
     </h3>
     <div class="card-deck mt-5">
+        {% for i in job %}
+
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">{{ i.title }}</h5>
+                <p class="card-text">Job Description: Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Debitis, quam.</p>
+                <p class="card-text">Company Name: {{i.company_name}}</p>
+                <p class="card-text">Skill Level: {{i.skill_level}}</p>
+                <p class="card-text">Last Date: {{ i.last_date }}</p>
+            </div>
+            <div class="card-footer">
+                <small class="text-muted"><a href="">Details</a></small>
+            </div>
+        </div>
+        {% endfor %}
+        <!--
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Job title</h5>
+                <p class="card-text">Job Description: Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Debitis, quam.</p>
+                <p class="card-text">Job Type: Full Time</p>
+                <p class="card-text">Experience: Intermediate</p>
+                <p class="card-text">Comapny Name: ABC</p>
+            </div>
+            <div class="card-footer">
+                <small class="text-muted"><a href="">Details</a></small>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Job title</h5>
+                <p class="card-text">Job Description: Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Debitis, quam.</p>
+                <p class="card-text">Job Type: Full Time</p>
+                <p class="card-text">Experience: Intermediate</p>
+                <p class="card-text">Comapny Name: ABC</p>
+            </div>
+            <div class="card-footer">
+                <small class="text-muted"><a href="">Details</a></small>
+            </div>
+        </div>
+    </div>
+
+    <div class="card-deck mt-5">
+
         <div class="card">
             <div class="card-body">
                 <h5 class="card-title">Job title</h5>
@@ -87,47 +134,9 @@
             </div>
         </div>
     </div>
-    <div class="card-deck mt-5">
-        <div class="card">
-            <div class="card-body">
-                <h5 class="card-title">Job title</h5>
-                <p class="card-text">Job Description: Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Debitis, quam.</p>
-                <p class="card-text">Job Type: Full Time</p>
-                <p class="card-text">Experience: Intermediate</p>
-                <p class="card-text">Comapny Name: ABC</p>
-            </div>
-            <div class="card-footer">
-                <small class="text-muted"><a href="">Details</a></small>
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-body">
-                <h5 class="card-title">Job title</h5>
-                <p class="card-text">Job Description: Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Debitis, quam.</p>
-                <p class="card-text">Job Type: Full Time</p>
-                <p class="card-text">Experience: Intermediate</p>
-                <p class="card-text">Comapny Name: ABC</p>
-            </div>
-            <div class="card-footer">
-                <small class="text-muted"><a href="">Details</a></small>
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-body">
-                <h5 class="card-title">Job title</h5>
-                <p class="card-text">Job Description: Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Debitis, quam.</p>
-                <p class="card-text">Job Type: Full Time</p>
-                <p class="card-text">Experience: Intermediate</p>
-                <p class="card-text">Comapny Name: ABC</p>
-            </div>
-            <div class="card-footer">
-                <small class="text-muted"><a href="">Details</a></small>
-            </div>
-        </div>
-    </div>
+    -->
+
+
 </main>
 
 {% endblock %}

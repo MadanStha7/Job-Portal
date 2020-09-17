@@ -33,15 +33,18 @@
             </tr>
             </thead>
             <tbody>
+            {% for i in job %}
             <tr class="table-active">
-                <th scope="row">Django Developer</th>
-                <td>ABC Tech Company</td>
-                <td>Beginner</td>
+                <th scope="row">{{ i.title }}</th>
+                <td>{{ i.company_name }}</td>
+                <td>{{i.skill_level}}</td>
                 <td>New Baneshor</td>
                 <td>
                     <button class="btn btn-info" type="submit">Details</button>
                 </td>
             </tr>
+            {% endfor %}
+            <!--
             <tr>
                 <th scope="row">React Developer</th>
                 <td>DEF Company</td>
@@ -87,6 +90,7 @@
                     <button class="btn btn-info" type="submit">Details</button>
                 </td>
             </tr>
+            -->
 
             </tbody>
         </table>
@@ -95,17 +99,21 @@
     <div class="container mt-5">
         <h4 class="text-center">Top Hiring Companies</h4>
         <div class="card-deck">
+            {% for i in company %}
             <div class="card">
                 <!-- image to be placed later-->
+
                 <div class="card-body">
-                    <h5 class="card-title">Company Name</h5>
-                    <h7 class="card-text">Company Address</h7>
-                    <p>Contact Details</p>
+                    <h5 class="card-title">{{i.name}}</h5>
+                    <h7 class="card-text">{{i.address}}</h7>
+                    <p>{{i.contact}}</p>
                 </div>
                 <div class="card-footer">
                     <a href="" class="text-muted">Read More</a>
                 </div>
             </div>
+            {% endfor %}
+            <!--
             <div class="card">
                 <div class="card-body">
                     <h5 class="card-title">Company Name</h5>
@@ -127,6 +135,7 @@
                 </div>
             </div>
         </div>
+        -->
     </div>
 
 </main>
