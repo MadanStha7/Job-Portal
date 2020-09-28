@@ -40,3 +40,11 @@ def jobseeker_registerPage(request):
 
 def company_registerPage(request):
     return render(request, "JobApp/company_register.html")
+
+
+def cv_builder(request):
+    return render(request, "JobApp/cv_builder.html")
+
+
+def post_job(request):
+    return render(request, "JobApp/Post_job.html")

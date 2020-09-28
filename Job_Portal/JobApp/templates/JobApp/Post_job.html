@@ -1,0 +1,65 @@
+{% extends 'JobApp/index.html' %}
+
+{% block content %}
+<h3 style="margin-left: 15%;">Post Your Job!</h3>
+<div class="container border">
+    <form style="margin-left: 2%;">
+        <div class="form-row">
+            <div class="form-group col-md-5">
+                <label for="jobtitle">Job Title</label>
+                <input type="text" class="form-control" id="jobtitle">
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-5">
+                <label for="salary">Salary</label>
+                <input type="email" class="form-control" id="salary">
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-md-10">
+                <label for="form_message">Description</label>
+                <textarea id="description" name="message" class="form-control"
+                          placeholder="Write your message here." rows="5" required="required"
+                          data-error="Please, leave us a message."></textarea>
+            </div>
+            <div class="form-group col-md-10">
+                <label for="form_message">Responsibilities</label>
+                <textarea id="form_message" name="message" class="form-control"
+                          placeholder="Write your message here." rows="5" required="required"
+                          data-error="Please, leave us a message."></textarea>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-5">
+                <label for="careerlevel">Career Level</label>
+                <input type="text" class="form-control" id="careerlevel">
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-5">
+                <label for="experience">Experience</label>
+                <input type="text" class="form-control" id="experience">
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-5">
+                <label for="qualification">Qualification</label>
+                <input type="text" class="form-control" id="qualification">
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-5">
+                <label for="enddate">End Date</label>
+                <input type="date" class="form-control" id="enddate">
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Post Job</button>
+
+    </form>
+</div>
+
+</div>
+
+{% endblock %}

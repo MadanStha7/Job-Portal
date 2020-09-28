@@ -1,0 +1,118 @@
+{% extends 'JobApp/index.html' %}
+
+{% block content %}
+
+<h1 style="margin-left: 15%;">
+    Resume Builder
+</h1>
+<div class="container border">
+    <div class="shadow p-3 mb-5 bg-white rounded">
+        <h6>1. Personal Information</h6>
+        <form style="margin-left: 2%;">
+            <div class="form-row">
+                <div class="form-group col-md-5">
+                    <label for="firstname">First Name</label>
+                    <input type="text" class="form-control" id="firstname">
+                </div>
+                <div class="form-group col-md-5">
+                    <label for="lastname">Last Name</label>
+                    <input type="text" class="form-control" id="lastname">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-5">
+                    <label for="inputEmail4">Email</label>
+                    <input type="email" class="form-control" id="inputEmail4">
+                </div>
+                <div class="form-group col-md-5">
+                    <label for="phone">Phone</label>
+                    <input type="tel" class="form-control" id="phone">
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group col-md-4">
+                    <label for="inputCity">City</label>
+                    <input type="text" class="form-control" id="inputCity">
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="state">State</label>
+                    <input type="text" class="form-control" id="state">
+
+                </div>
+                <div class="form-group col-md-2">
+                    <label for="country">Country</label>
+                    <input type="text" class="form-control" id="country">
+                </div>
+            </div>
+
+        </form>
+    </div>
+
+    <div class="shadow p-3 mb-5 bg-white rounded">
+        <h6>2. Work History</h6>
+        <form style="margin-left: 2%;">
+            <div class="form-row">
+                <div class="form-group col-md-5">
+                    <label for="jobtitle">Job Title</label>
+                    <input type="text" class="form-control" id="jobtitle">
+                </div>
+                <div class="form-group col-md-5">
+                    <label for="companyname">Company Name</label>
+                    <input type="text" class="form-control" id="companyname">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-5">
+                    <label for="startdate">Start Date</label>
+                    <input type="date" class="form-control" id="startdate">
+                </div>
+                <div class="form-group col-md-5">
+                    <label for="end_date">End Date</label>
+                    <input type="date" class="form-control" id="end_date">
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary ">Add more workplace</button>
+
+            <hr>
+        </form>
+    </div>
+    <div class="shadow p-3 mb-5 bg-white rounded">
+        <h6>3. Education</h6>
+        <form style="margin-left: 2%;">
+            <div class="form-row">
+                <div class="form-group col-md-4">
+                    <label for="degreetype">Degree Type</label>
+                    <select id="degreetype" class="form-control">
+                        <option>Vocational</option>
+                        <option>Higher Secondary</option>
+                        <option selected>Bachelor's Degree</option>
+                        <option>Master's Degree</option>
+                    </select>
+
+                </div>
+                <div class="form-group col-md-5">
+                    <label for="schoolname">School Name</label>
+                    <input type="text" class="form-control" id="schoolname">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-4">
+                    <label for="subject">Subject</label>
+                    <input type="text" class="form-control" id="subject">
+                </div>
+                <div class="form-group col-md-5">
+                    <label for="graduationyear">Year Graduated</label>
+                    <input type="month" class="form-control" id="graduationyear">
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary ">Add another</button>
+
+            <hr>
+            <button type="submit" class="btn btn-primary">Buid Resume</button>
+        </form>
+    </div>
+    <hr>
+</div>
+
+{% endblock %}

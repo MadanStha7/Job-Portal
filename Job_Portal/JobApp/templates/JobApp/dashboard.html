@@ -15,7 +15,7 @@
                 <span class="input-group-text"><i class="fa fa-search"></i></span>
             </div>
         </div>
-        <button type="button" class="btn btn-outline-primary">Build Your Resume</button>
+        <a class="btn btn-primary" href="{% url 'cv_builder' %}" role="button">Resume Builder</a>
         <button type="button" class="btn btn-outline-primary float-right">Advanced Search</button>
 
 
@@ -40,7 +40,64 @@
                 <td>{{i.skill_level}}</td>
                 <td>New Baneshor</td>
                 <td>
-                    <button class="btn btn-info" type="submit">Details</button>
+                    <button type="button" class="btn btn-info" data-toggle="modal" data-target="#staticBackdrop">
+                        Details
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false"
+                         tabindex="-1"
+                         aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="staticBackdropLabel">Django Developer</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Company Name: <small>Madan Tech</small></p>
+                                    <p>Address: <small>New Baneshor, Kathmandu</small></p>
+                                    <p>Salary: <small>50000</small></p>
+                                    <p>Job Type: <small>Full-Time</small></p>
+                                    <p>Description: <small>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non
+                                        possimus
+                                        eligendi error, ipsum nulla, aliquid minus quaerat vitae facere doloribus eos
+                                        distinctio
+                                        dignissimos vel optio eveniet nostrum ex porro in!</small></p>
+                                    <p>Responsibilities: <small>Lorem ipsum, dolor sit amet consectetur adipisicing
+                                        elit. Deleniti
+                                        impedit similique eligendi itaque temporibus suscipit debitis magni ab aut.
+                                        Distinctio
+                                        cumque quisquam eos facere error aliquam! Quibusdam aliquid, tempore suscipit
+                                        unde nobis
+                                        possimus cumque quas impedit aspernatur autem dignissimos consectetur! Eligendi
+                                        harum, quo
+                                        error ipsam aliquid quidem quam tenetur consequatur obcaecati quas, ratione fuga
+                                        accusantium
+                                        sunt, ipsa enim facere iusto culpa ducimus? Facilis laudantium illum ipsam vero
+                                        quam
+                                        accusamus aliquam. Sed labore, voluptatem, animi aliquid ad vel reprehenderit
+                                        repellendus
+                                        libero consequuntur quibusdam in, cupiditate excepturi laboriosam incidunt
+                                        molestiae! Illum
+                                        temporibus aperiam quam accusamus soluta! Officiis facilis asperiores mollitia
+                                        placeat
+                                        quisquam.</small></p>
+                                    <p>Career level: <small>Intern</small></p>
+                                    <p>Experience: <small>2 years</small></p>
+                                    <p>Qualification; <small>BSc CSIT, BIT, etc.</small></p>
+                                    <p>Last Date to Apply: <small>2020 September 30</small></p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Apply</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </td>
             </tr>
             {% endfor %}
@@ -136,7 +193,7 @@
             </div>
         </div>
         -->
-    </div>
+        </div>
 
 </main>
 

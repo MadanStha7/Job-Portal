@@ -11,5 +11,6 @@ urlpatterns = [
     path('job/', views.jobPage, name='job'),
     path('jobseeker_profile/', views.jobseeker_profile, name='jobseeker_profile'),
     path('company_profile/', views.company_profile, name='company_profile'),
-
+    path('cv_builder/', views.cv_builder, name='cv_builder'),
+    path('post_job/', views.post_job, name='post_job'),
 ]
